@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@primevue/nuxt-module', '@nuxtjs/tailwindcss', '@nuxtjs/google-fonts'],
   css: ['primeicons/primeicons.css', '~/assets/css/tailwind.css'],
+  imports: {
+    dirs: ['./composables/useMarkdown'],
+  },
   googleFonts: {
     base64: true,
     fontsDir: 'assets/fonts',
