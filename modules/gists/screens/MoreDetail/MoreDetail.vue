@@ -1,16 +1,22 @@
 <script setup lang="ts">
 import PublicHeadline from '@/modules/gists/components/PublicHeadline/PublicHeadline.vue'
 import GistCodeSnippet from '@/modules/gists/components/CodeSnippet/CodeSnippet.vue'
-import DialogPaymentSuccess from '@/modules/payments/components/DialogPaymentSuccess/DialogPaymentSuccess.vue'
+import LazyDialogPaymentSuccess from '@/modules/payments/components/DialogPaymentSuccess/DialogPaymentSuccess.vue'
+import LazyDialogPaymentError from '@/modules/payments/components/DialogPaymentError/DialogPaymentError.vue'
 
 const route = useRoute()
 const isPaymentSuccessfully = ref<boolean>(false)
+const isPaymentFail = ref<boolean>(false)
 
 onMounted(() => {
-  const { success_payment } = route.query
+  const { success_payment, fail_payment } = route.query
 
   if (success_payment) {
     isPaymentSuccessfully.value = true
+  }
+
+  if (fail_payment) {
+    isPaymentFail.value = true
   }
 })
 </script>
@@ -19,5 +25,6 @@ onMounted(() => {
   <PublicHeadline />
 
   <GistCodeSnippet />
-  <DialogPaymentSuccess v-model:visible="isPaymentSuccessfully" />
+  <LazyDialogPaymentSuccess v-model:visible="isPaymentSuccessfully" />
+  <LazyDialogPaymentError v-model:visible="isPaymentFail" />
 </template>
