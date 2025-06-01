@@ -7,8 +7,8 @@ export function useSession() {
     return hasUserLogged
   }
 
-  const logout = () => {
-    const response = services.auth.signOut()
+  const logout = async () => {
+    const response = await services.auth.signOut()
     return response
   }
 
