@@ -7,6 +7,9 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['./composables/useMarkdown', './composables/useServices'],
   },
+  supabase: {
+    redirect: false,
+  },
   runtimeConfig: {
     public: {
       node_env: process.env.NODE_ENV,
