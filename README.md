@@ -89,3 +89,13 @@ supabase start
 ```bash
 supabase stop
 ```
+
+# Scripts
+
+```bash
+yarn db:generate-types
+
+// libs --> são utilitários (quase como helpers)
+// quando usa o cupabase client, ele retorna um typo any, ai serve para recuperar os dados
+// sempre que modificar algo nas migrations, precisa rodar esse comando
+```
