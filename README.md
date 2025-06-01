@@ -58,6 +58,17 @@ yarn preview
 bun run preview
 Check out the deployment documentation for more information.
 
+# .env Structure
+
+```bash
+NODE_ENV=local
+SITE_URL=http://localhost:3000
+SUPABASE_URL=http://127.0.0.1:54321
+SUPABASE_KEY= {your_supabase_key}
+GITHUB_CLIENT_ID= {your_github_key}
+GITHUB_SECRET= {your_github_secret}
+```
+
 # Supabase CLI
 
 [![Coverage Status](https://coveralls.io/repos/github/supabase/cli/badge.svg?branch=main)](https://coveralls.io/github/supabase/cli?branch=main) [![Bitbucket Pipelines](https://img.shields.io/bitbucket/pipelines/supabase-cli/setup-cli/master?style=flat-square&label=Bitbucket%20Canary)](https://bitbucket.org/supabase-cli/setup-cli/pipelines) [![Gitlab Pipeline Status](https://img.shields.io/gitlab/pipeline-status/sweatybridge%2Fsetup-cli?label=Gitlab%20Canary)
