@@ -1,7 +1,10 @@
 import { useSession } from '@/modules/auth/composables/useSession/useSession'
 import type { User } from '@/modules/users/entities/User/User'
 
-export function useMyself() {
+export function useMyself(): {
+  loading: Ref<boolean>
+  user: Ref<User | undefined>
+} {
   const { logAndTrace } = useLogger()
   const services = useServices()
   const session = useSession()

@@ -7,10 +7,10 @@ import { useMyself } from '@/modules/users/composables/useMyself/useMyself'
 const router = useRouter()
 const session = useSession()
 
-const {loading, user} = useMyself()
+const { loading, user } = useMyself()
 
 const nickname = computed(() => {
-  if(!user.value?.name) {
+  if (!user.value?.name) {
     return 'Usuário'
   }
 
