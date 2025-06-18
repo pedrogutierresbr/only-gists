@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   modules: ['@primevue/nuxt-module', '@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@nuxtjs/supabase'],
   css: ['primeicons/primeicons.css', '~/assets/css/tailwind.css'],
   imports: {
-    dirs: ['./composables/useMarkdown', './composables/useServices'],
+    dirs: ['./composables/useMarkdown', './composables/useServices', './composables/useLogger'],
   },
   supabase: {
     redirect: false,

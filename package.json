@@ -15,7 +15,7 @@
     "@nuxtjs/supabase": "^1.5.1",
     "@nuxtjs/tailwindcss": "^6.14.0",
     "@primeuix/themes": "^1.1.1",
-    "@supabase/supabase-js": "supabase/supabase-js",
+    "@supabase/supabase-js": "^2.50.0",
     "@wooorm/starry-night": "^3.7.0",
     "hast-util-to-html": "^9.0.5",
     "marked": "^15.0.12",
