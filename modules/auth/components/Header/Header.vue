@@ -72,7 +72,7 @@ const toggle = (event: Event) => {
           </button>
         </div>
 
-        <Menu ref="menu" id="header-auth-menu" :model="items" :popup="true"></Menu>
+        <Menu ref="menu" :model="items" :popup="true"></Menu>
       </div>
     </nav>
   </header>

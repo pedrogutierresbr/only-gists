@@ -6,6 +6,7 @@ export default {
             'rounded-md',
             // Spacing
             'py-2',
+            'px-2',
             // Colors
             'bg-surface-0 dark:bg-surface-700',
             'text-surface-700 dark:text-white/80',
