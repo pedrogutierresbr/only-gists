@@ -48,7 +48,9 @@ const handleLogout = async () => {
         </HeaderLoader>
       </template>
       <template #content>
-        <slot />
+        <Splash :loading="loading">
+          <slot />
+        </Splash>
       </template>
     </MainContent>
   </div>
