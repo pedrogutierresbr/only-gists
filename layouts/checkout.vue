@@ -42,7 +42,7 @@ const handlerWantsBeCreator = () => {
       <template #header>
         <HeaderLoader :loading="loading">
           <Header
-          v-if="session.isLogged()"
+            v-if="session.isLogged()"
             :profile-pic="profilePic"
             :nickname="nickname"
             @navigate-to-new-gist="() => router.push('/app/gist/create')"
@@ -52,7 +52,7 @@ const handlerWantsBeCreator = () => {
             @logout="handleLogout()"
           />
 
-          <HeaderNotAuthenticated v-else @wants-be-creator="handlerWantsBeCreator"/>
+          <HeaderNotAuthenticated v-else @wants-be-creator="handlerWantsBeCreator" />
         </HeaderLoader>
       </template>
       <template #content>

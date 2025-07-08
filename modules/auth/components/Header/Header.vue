@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { separator } from '@primeuix/themes/aura/breadcrumb'
-import { label } from '@primeuix/themes/aura/metergroup'
 
 const emit = defineEmits<{
   (e: 'navigate-to-new-gist'): void
