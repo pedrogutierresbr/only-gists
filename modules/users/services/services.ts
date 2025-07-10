@@ -9,6 +9,9 @@ export default (client: SupabaseClient<Database>, httpClient: AxiosInstance) => 
     const url = `https://viacep.com.br/ws/${zipCode}/json/`
     const response = await httpClient.get<SearchAddressResponse>(url)
     const address = searchAddressByZipCodeAdapter(response.data)
+    return {
+      data: address
+    }
   },
 
   async getMyself(id: string) {
