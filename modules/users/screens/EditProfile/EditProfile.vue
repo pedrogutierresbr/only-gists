@@ -4,12 +4,19 @@ import HeadlineEditLoader from '@/modules/users/components/HeadlineEdit/Loader.v
 import BasicInfoForm from '@/modules/users/components/BasicInfoForm/BasicInfoForm.vue'
 import AddressForm from '@/modules/users/components/AddressForm/AddressForm.vue'
 import { myselfKey } from '@/modules/users/composables/useMyself/useMyself'
+import {useUserProfileActions} from '@/modules/users/composables/useUserProfileActions/useUserProfileActions'
 import type { MySelfContextProvider } from '@/modules/users/composables/useMyself/types'
 
 const { user, loading } = inject(myselfKey) as MySelfContextProvider
+const router = useRouter()
+const { share } = useUserProfileActions()
 
-const handleShare = () => {}
-const handleNavigateToProfile = () => {}
+const handleShare = (username: string) => {
+  share(username)
+}
+const handleNavigateToProfile = (username: string) => {
+  router.push(`/${username}`)
+}
 </script>
 
 <template>
