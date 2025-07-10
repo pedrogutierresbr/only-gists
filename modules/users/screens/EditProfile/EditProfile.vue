@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import HeadlineEdit from '@/modules/users/components/HeadlineEdit/HeadlineEdit.vue'
 import HeadlineEditLoader from '@/modules/users/components/HeadlineEdit/Loader.vue'
+import BasicInfoForm from '@/modules/users/components/BasicInfoForm/BasicInfoForm.vue'
 import { myselfKey } from '@/modules/users/composables/useMyself/useMyself'
 import type { MySelfContextProvider } from '@/modules/users/composables/useMyself/types'
 
@@ -13,11 +14,15 @@ const handleNavigateToProfile = () => {}
 <template>
   <HeadlineEditLoader :loading="loading">
     <HeadlineEdit
-      :username="user.username"
-      :avatar-url="user.avatarUrl"
+      :username="user?.username!"
+      :avatar-url="user?.avatarUrl!"
       class="my-10"
       @share="handleShare"
       @navigate-to-profile="handleNavigateToProfile"
     />
+
+    <WidgetDefault title="Informações básicas">
+      <BasicInfoForm />
+    </WidgetDefault>
   </HeadlineEditLoader>
 </template>
