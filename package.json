@@ -19,6 +19,7 @@
     "@wooorm/starry-night": "^3.7.0",
     "hast-util-to-html": "^9.0.5",
     "marked": "^15.0.12",
+    "maska": "^2.1.11",
     "nuxt": "^3.17.3",
     "primeicons": "^7.0.0",
     "primevue": "^4.3.4",
