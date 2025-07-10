@@ -18,6 +18,7 @@
     "@supabase/supabase-js": "^2.50.0",
     "@vueuse/core": "^13.5.0",
     "@wooorm/starry-night": "^3.7.0",
+    "axios": "^1.10.0",
     "hast-util-to-html": "^9.0.5",
     "marked": "^15.0.12",
     "maska": "^2.1.11",
