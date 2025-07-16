@@ -29,7 +29,7 @@ export default (client: SupabaseClient<Database>, httpClient: AxiosInstance) => 
         site,
         bio,
         phone,
-        addres: {
+        address: {
           zipCode: address?.zipCode,
           number: address?.number,
           street: address?.street,

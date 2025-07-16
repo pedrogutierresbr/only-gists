@@ -43,7 +43,7 @@ export function useUserUpdate({ user: userRef }: UseUserUpdateOptions) {
         severity: 'info',
         summary: 'Sucesso!',
         detail: 'Dados atualizados',
-        life: 3000,
+        life: 100000,
       })
     } catch (error) {
       logAndTrace(error)
