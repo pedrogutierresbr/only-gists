@@ -33,3 +33,120 @@ body,
 #__nuxt {
   @apply w-full h-full scroll-smooth;
 }
+
+/* Toast container principal */
+[data-pc-name="toast"] {
+  width: 24rem !important;
+}
+
+/* Mensagem do toast */
+[data-pc-section="message"] {
+  margin: 1rem 0 !important;
+  border-radius: 0.375rem !important;
+  width: 100% !important;
+  border: solid !important;
+  border-width: 0 0 0 6px !important;
+  backdrop-filter: blur(10px) !important;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -1px rgb(0 0 0 / 0.06) !important;
+}
+
+/* Conteúdo da mensagem */
+[data-pc-section="messagecontent"] {
+  display: flex !important;
+  align-items: flex-start !important;
+  padding: 1rem !important;
+}
+
+/* Texto da mensagem */
+[data-pc-section="messagetext"] {
+  font-size: 1rem !important;
+  line-height: 1.25 !important;
+  margin-left: 0.5rem !important;
+  flex: 1 !important;
+}
+
+/* Título da mensagem */
+[data-pc-section="summary"] {
+  font-weight: 700 !important;
+  display: block !important;
+}
+
+/* Detalhe da mensagem */
+[data-pc-section="detail"] {
+  margin-top: 0.5rem !important;
+  display: block !important;
+}
+
+/* Ícone da mensagem */
+[data-pc-section="messageicon"] {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  flex-shrink: 0 !important;
+}
+
+/* Botão de fechar */
+[data-pc-section="closebutton"] {
+  margin-left: auto !important;
+  border-radius: 9999px !important;
+  background-color: transparent !important;
+  transition: background-color 0.2s ease-in-out !important;
+}
+
+[data-pc-section="closebutton"]:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Cores específicas por severity */
+
+/* Info toast (azul) */
+[data-p="info"][data-pc-section="message"] {
+  background-color: rgba(219, 234, 254, 0.7) !important;
+  border-color: rgb(59, 130, 246) !important;
+  color: rgb(30, 58, 138) !important;
+}
+
+/* Success toast (verde) */
+[data-p="success"][data-pc-section="message"] {
+  background-color: rgba(220, 252, 231, 0.7) !important;
+  border-color: rgb(34, 197, 94) !important;
+  color: rgb(22, 101, 52) !important;
+}
+
+/* Warning toast (laranja) */
+[data-p="warn"][data-pc-section="message"] {
+  background-color: rgba(254, 243, 199, 0.7) !important;
+  border-color: rgb(245, 158, 11) !important;
+  color: rgb(146, 64, 14) !important;
+}
+
+/* Error toast (vermelho) */
+[data-p="error"][data-pc-section="message"] {
+  background-color: rgba(254, 226, 226, 0.7) !important;
+  border-color: rgb(239, 68, 68) !important;
+  color: rgb(153, 27, 27) !important;
+}
+
+/* Dark mode */
+.dark [data-p="info"][data-pc-section="message"] {
+  background-color: rgba(59, 130, 246, 0.2) !important;
+  border-color: rgb(96, 165, 250) !important;
+  color: rgb(147, 197, 253) !important;
+}
+
+.dark [data-p="success"][data-pc-section="message"] {
+  background-color: rgba(34, 197, 94, 0.2) !important;
+  border-color: rgb(74, 222, 128) !important;
+  color: rgb(134, 239, 172) !important;
+}
+
+.dark [data-p="warn"][data-pc-section="message"] {
+  background-color: rgba(245, 158, 11, 0.2) !important;
+  border-color: rgb(251, 191, 36) !important;
+  color: rgb(253, 224, 71) !important;
+}
+
+.dark [data-p="error"][data-pc-section="message"] {
+  background-color: rgba(239, 68, 68, 0.2) !important;
+  border-color: rgb(248, 113, 113) !important;
+  color: rgb(252, 165, 165) !important;
+}
