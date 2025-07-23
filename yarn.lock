@@ -3289,6 +3289,11 @@ detect-libc@^2.0.0:
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-2.0.4.tgz#f04715b8ba815e53b4d8109655b6508a6865a7e8"
   integrity sha512-3UDv+G9CsCKO1WKMGw9fwq/SWJYbI0c5Y7LU1AXYoDdbhE2AHQ6N6Nb34sG8Fj7T5APy8qXDCKuuIHd1BR0tVA==
 
+detect-programming-language@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/detect-programming-language/-/detect-programming-language-1.0.4.tgz#81b05bf37ac4db5f9c4ed943a46dbedc8db4dc28"
+  integrity sha512-2aurszyozOe27JAVyWvtA0JQLfbRIj0Vu1YngZrVk/qX6fgqOyH5m+bnPBTTWjMiYW64vTHXujCW/kQQSyHs9g==
+
 detective-amd@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/detective-amd/-/detective-amd-6.0.1.tgz#71eb13b5d9b17222d7b4de3fb89a8e684d8b9a23"
