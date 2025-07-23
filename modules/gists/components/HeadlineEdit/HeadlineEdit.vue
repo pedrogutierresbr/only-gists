@@ -40,7 +40,7 @@ const priceOptions = [
 
       <div class="flex flex-col gap-2">
         <label for="gist-price">Preço</label>
-        <SelectButton v-model="headline.price" :options="priceOptions" option-value="value" option-label="name" />
+        <SelectButton id="gist-price" v-model="headline.price" :options="priceOptions" option-value="value" option-label="name" />
       </div>
     </div>
 
