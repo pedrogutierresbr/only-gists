@@ -1,3 +1,5 @@
+import Lara from '@primeuix/themes/lara'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
@@ -28,14 +30,17 @@ export default defineNuxtConfig({
   },
   primevue: {
     options: {
-      unstyled: true,
-    },
-    importPT: {
-      as: 'lara',
-      from: '@/assets/presets/lara/',
+      theme: {
+        preset: Lara,
+        options: {
+          prefix: 'p',
+          darkModeSelector: false,
+          cssLayer: false,
+        },
+      },
     },
     components: {
-      exclude: ['Form', 'FormField'],
+      exclude: ['Form', 'FormField', 'Chart', 'Editor'],
     },
   },
 })
