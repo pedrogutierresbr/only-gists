@@ -32,4 +32,5 @@ html,
 body,
 #__nuxt {
   @apply w-full h-full scroll-smooth;
+  font-family: 'Inter', sans-serif;
 }
